@@ -2,11 +2,13 @@
 /* Fuente y fondo */
 body {
     font-family: 'Roboto', sans-serif; /* Fuente Roboto */
-    background-image: linear-gradient(to right,rgb(17, 56, 102), rgb(31, 129, 171), rgb(5, 67, 94));
+    /* background-image: linear-gradient(to right,rgb(17, 56, 102), rgb(31, 129, 171), rgb(5, 67, 94)); */
+    /* background-image: url("assets/img/back.jpg"); */
+    background-image: url("assets/img/img.jpg");
     background-size: cover; /* Ajusta el tamaño del gradiente para que cubra toda la página */
     background-repeat: no-repeat;
     background-position: center; /* Centra el gradiente */
-    background-attachment: fixed; /* Fija el gradiente para que se desplace con la página */
+    background-attachment: fixed; /* Fija el gradiente para que se desplace con la página */ 
 }
 
 /* Estilo para el contenido principal */
@@ -56,6 +58,44 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #ddd;
     color: black;
+}
+
+.todos-cursos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* .todos-cursos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+} */
+
+/* .todos-cursos div{
+    background: white;
+    color: black;
+    border: 5px solid black;
+    border-radius: 20px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+} */
+
+.todos-cursos div{
+    background: white;
+    color: black;
+    border: 5px solid black;
+    border-radius: 20px;
+    margin: 10px 5px;
+    width: 30%;
+}
+
+.todos-cursos p{
+    margin: 10px 10px;
+}
+
+.todos-cursos img{
+    width: 60px;
+    height: 60px;
 }
 
 /* Para lista desplegable de cursos */
@@ -144,6 +184,24 @@ footer ul li:last-child {
 footer ul li {
     display: inline;
     margin-right: 10px; /* Ajusta el espacio entre los enlaces si es necesario */
+}
+
+footer h3{
+    color: rgb(252, 251, 251);
+    text-align: center;
+    text-decoration: none;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+footer img{
+    width: 30px;
+    height: 30px;
+}
+
+footer img:hover{
+    transform: scale(1.1, 1.1);
 }
 
 /* Estilo para la caja que contiene el formulario de inicio de sesión */
