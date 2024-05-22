@@ -1,9 +1,6 @@
-
 /* Fuente y fondo */
 body {
     font-family: 'Roboto', sans-serif; /* Fuente Roboto */
-    /* background-image: linear-gradient(to right,rgb(17, 56, 102), rgb(31, 129, 171), rgb(5, 67, 94)); */
-    /* background-image: url("assets/img/back.jpg"); */
     background-image: url("assets/img/img.jpg");
     background-size: cover; /* Ajusta el tamaño del gradiente para que cubra toda la página */
     background-repeat: no-repeat;
@@ -11,12 +8,285 @@ body {
     background-attachment: fixed; /* Fija el gradiente para que se desplace con la página */ 
 }
 
+body.inicio {
+    background: url('assets/img/back2.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.iniciar_sesion {
+    color: white;
+    background: url('assets/img/back4.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.iniciar_sesion a {
+    color: #a8d8ff; /* Color de los enlaces */
+}
+
+body.iniciar_sesion input[type="email"],
+body.iniciar_sesion input[type="password"],
+body.iniciar_sesion input[type="submit"] {
+    color: black; /* Color del texto dentro de los campos de formulario */
+}
+
+body.iniciar_sesion input[type="submit"] {
+    color: white;
+    background-color: #007bff; /* Fondo azul para el botón de enviar */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+body.iniciar_sesion .login-box {
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+body.iniciar_sesion label {
+    color: white;
+}
+
+body.cursos {
+    background: url('assets/img/back3.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.registro {
+    background: url('assets/img/back5.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.terminos_y_condiciones {
+    background: url('assets/img/back6.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Estilos para centrar y justificar el contenido de los términos y condiciones */
+body.terminos_y_condiciones main {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    min-height: 80vh; /* Altura mínima del contenedor principal */
+}
+
+#condiciones {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    padding: 20px; /* Espacio interno */
+    background-color: #faf4f4; /* Color de fondo */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    text-align: justify; /* Justificar texto */
+}
+
+#condiciones p {
+    line-height: 1.6; /* Altura de línea para mejor legibilidad */
+    margin-bottom: 20px; /* Espacio inferior entre párrafos */
+}
+
+h1 {
+    text-align: center; /* Centrar título */
+    margin-bottom: 20px; /* Espacio inferior del título */
+}
+
+body.politica_de_privacidad {
+    background: url('assets/img/back7.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Estilos para centrar y justificar el contenido de los términos y condiciones */
+body.politica_de_privacidad main {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    min-height: 80vh; /* Altura mínima del contenedor principal */
+}
+
+#politica {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    padding: 20px; /* Espacio interno */
+    background-color: #faf4f4; /* Color de fondo */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    text-align: justify; /* Justificar texto */
+}
+
+#politica p {
+    line-height: 1.6; /* Altura de línea para mejor legibilidad */
+    margin-bottom: 20px; /* Espacio inferior entre párrafos */
+}
+
+#politica h1, #politica h2 {
+    text-align: center; /* Centrar título */
+    margin-bottom: 20px; /* Espacio inferior del título */
+}
+
+#politica ol {
+    padding-left: 20px; /* Indentación para la lista */
+}
+
+#politica li {
+    margin-bottom: 15px; /* Espacio inferior entre puntos de la lista */
+}
 /* Estilo para el contenido principal */
+
+body.acerca_de {
+    background: url('assets/img/back2.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Estilos para centrar y justificar el contenido de los términos y condiciones */
+body.acerca_de main {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    min-height: 80vh; /* Altura mínima del contenedor principal */
+}
+
+#about {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    padding: 20px; /* Espacio interno */
+    background-color: #faf4f4; /* Color de fondo */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    text-align: justify; /* Justificar texto */
+}
+
+#about p {
+    line-height: 1.6; /* Altura de línea para mejor legibilidad */
+    margin-bottom: 20px; /* Espacio inferior entre párrafos */
+}
+
+#about h1, #about h2 {
+    text-align: center; /* Centrar título */
+    margin-bottom: 20px; /* Espacio inferior del título */
+}
+
+#about ol {
+    padding-left: 20px; /* Indentación para la lista */
+}
+
+#about li {
+    margin-bottom: 15px; /* Espacio inferior entre puntos de la lista */
+}
+
+body.contacto {
+    background: url('assets/img/back8.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Estilo para la caja que contiene el formulario de contacto */
+.contacto-box {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px;
+    background-color: transparent; /* Fondo transparente */
+    font-family: 'Roboto', sans-serif; /* Fuente Roboto */
+}
+
+/* Estilo para los elementos del formulario de contacto dentro de la caja */
+.contacto-box .form-label {
+    font-weight: bold;
+}
+
+.contacto-box .form-control {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo para el botón de enviar del formulario de contacto */
+.contacto-box .btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contacto-box .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+
+
 main {
     margin-top: 50px; /* Ajusta este valor según el tamaño de tu navbar */
     text-align: center; /* Centrar contenido del navbar */
     font-family: 'Roboto', sans-serif; /* Fuente Roboto */
     font-size: 14px; /* Tamaño de fuente 14px */
+}
+
+/* index reseña */
+#reseña {
+    padding: 50px 0; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+}
+
+#reseña h2 {
+    font-size: 24px; /* Tamaño del título */
+    color: #333; /* Color del texto */
+}
+
+#reseña p {
+    font-size: 18px; /* Tamaño del texto */
+    color: rgb(0, 0, 0); /* Color del texto */
+}
+
+.text-center {
+    text-align: justify;
+    margin-left: 3cm;
+    margin-right: 3cm;
+}
+/* logos patrocinadores */
+#logos {
+    text-align: center; /* Centra los logotipos horizontalmente */
+}
+
+#logos h2 {
+    font-size: 24px; /* Tamaño del título */
+    color: #333; /* Color del texto */
+}
+
+#logos ul {
+    padding: 20px 0; /* Espaciado interno */
+    list-style: none; /* Elimina los estilos de lista */
+}
+
+#logos ul li {
+    display: inline-block; /* Muestra las imágenes en línea */
+    margin: 0 10px; /* Espaciado entre logotipos */
+}
+
+#logos ul li img {
+    max-width: 100px; /* Ancho máximo de las imágenes */
+    max-height: 60px; /* Altura máxima de las imágenes */
+}
+
+/* Estilos para el contenedor del carrusel */
+.carousel-container {
+    height: calc(75vh - 56px); /* Restamos la altura del navbar */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para las imágenes dentro del carrusel */
+.carousel-item img {
+    max-height: 80%;
+    width: auto;
+    max-width: 80%;
+    display: block;
+    margin: 0 auto; /* Centramos horizontalmente */
 }
 
 /* Estilos para la barra de navegación */
@@ -33,12 +303,24 @@ nav {
     text-align: center; /* Centrar contenido del navbar */
     font-family: 'Roboto', sans-serif; /* Fuente Roboto */
     font-size: 14px; /* Tamaño de fuente 14px */
+    height: 56px; /* Altura del navbar */
+    z-index: 1000; /* Aseguramos que el navbar esté por encima del contenido */
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos de la izquierda y derecha */
 }
 
 nav ul {
     list-style-type: none;
     margin: 0 auto; /* Centrar navbar */
     padding: 0;
+}
+
+nav ul.nav-left {
+    margin-left: 20px; /* Ajusta según sea necesario */
+}
+
+nav ul.nav-right {
+    margin-right: 20px; /* Ajusta según sea necesario */
 }
 
 nav ul li {
@@ -60,27 +342,13 @@ nav ul li a:hover {
     color: black;
 }
 
-.todos-cursos{
+.todos-cursos {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-/* .todos-cursos{
-    display: grid;
-    grid-template-columns: auto auto auto;
-} */
-
-/* .todos-cursos div{
-    background: white;
-    color: black;
-    border: 5px solid black;
-    border-radius: 20px;
-    grid-column-start: 1;
-    grid-column-end: 2;
-} */
-
-.todos-cursos div{
+.todos-cursos div {
     background: white;
     color: black;
     border: 5px solid black;
@@ -89,11 +357,11 @@ nav ul li a:hover {
     width: 30%;
 }
 
-.todos-cursos p{
+.todos-cursos p {
     margin: 10px 10px;
 }
 
-.todos-cursos img{
+.todos-cursos img {
     width: 60px;
     height: 60px;
 }
@@ -144,7 +412,6 @@ nav ul li a:hover {
     display: block;
     width: 50px;
     height:50px; 
-    vertical-align: middle; /* Alinea verticalmente la imagen */
 }
 
 .boton h2 {
@@ -152,31 +419,29 @@ nav ul li a:hover {
     font-size: 16px; /* Tamaño del texto */
 }
 
-
 /* Estilos para el footer */
 footer {
     background-color: #870758f9; /* Mismo color de fondo que la barra de navegación */
-    overflow: hidden; /* Solo si deseas ocultar contenido que se desborde */
-    position: fixed;
+    position: fixed; /* Cambiado a relative */
     bottom: 0;
     left: 0; /* Ajusta el margen izquierdo */
     width: 100%;
+    height: 60px; /* Altura del footer */
     background-color: #870758f9; /* Color de fondo */
     overflow: hidden;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 1rem 0; /* Ajuste de espacio vertical */
     text-align: center; /* Centrar contenido del footer */
     font-family: 'Roboto', sans-serif; /* Fuente Roboto */
     font-size: 14px; /* Tamaño de fuente 14px */
+    z-index: 999; /* Asegura que el footer esté encima del contenido */
 }
 
 footer p {
-    color: rgb(252, 251, 251); /* Mismo color de texto que la barra de navegación */
+    color: #fff; /* Color de texto */
     text-align: center;
     padding: 14px 16px;
-    font-family: 'Roboto', sans-serif; /* Fuente Roboto */
-    font-size: 14px; /* Tamaño de fuente 14px */
 }
 
 footer ul {
@@ -188,7 +453,7 @@ footer ul {
 
 footer ul li a {
     display: inline-block;
-    color: rgb(252, 251, 251);
+    color: #fff; /* Color de texto */
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -198,7 +463,7 @@ footer ul li a {
 
 footer ul li a:hover {
     background-color: #ddd;
-    color: black;
+    color: #000; /* Color de texto en hover */
 }
 
 footer ul li:last-child {
@@ -210,8 +475,8 @@ footer ul li {
     margin-right: 10px; /* Ajusta el espacio entre los enlaces si es necesario */
 }
 
-footer h3{
-    color: rgb(252, 251, 251);
+footer h3 {
+    color: #fff; /* Color de texto */
     text-align: center;
     text-decoration: none;
     font-weight: normal;
@@ -219,26 +484,50 @@ footer h3{
     font-size: 20px;
 }
 
-footer img{
+footer img {
     width: 30px;
     height: 30px;
 }
 
-footer img:hover{
+footer img:hover {
     transform: scale(1.1, 1.1);
 }
 
-.footer-container{
+.footer-container {
     display: flex;
     justify-content: space-between;
+    align-items: center; /* Centra verticalmente los elementos */
 }
 
-.copyright{
-    text-align:center;
+.content ul {
+    display: flex; /* Establece los elementos internos como flexibles */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.content ul li {
+    margin-right: 10px; /* Ajusta el espacio entre los elementos */
+}
+
+.redes-sociales {
+    display: flex;
+    align-items: center;
+}
+
+.redes-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.redes-icons a {
+    display: inline-block; /* Para que los enlaces se muestren en línea */
+}
+
+.copyright {
+    text-align: center;
     color: #f9f9f9; 
 }
 
-.logo img{
+.logo img {
     width: 60px;
     height: 60px;
 }
@@ -270,16 +559,16 @@ footer img:hover{
     margin: 5px 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif; /* Fuente Roboto */
-    background-color: transparent; /* Botón transparente */
-    border: 1px solid #ccc; /* Borde */
-    color: #faf5f5; /* Color del texto del botón */
+    background-color: #007bff; /* Botón azul */
+    border: none; /* Sin borde */
+    color: #fff; /* Color del texto del botón */
     cursor: pointer;
+    border-radius: 5px; /* Bordes redondeados */
 }
 
 .login-box input[type="submit"]:hover {
     background-color: #036382; /* Color de fondo del botón al pasar el mouse */
 }
-
 
 /* Estilo para la caja que contiene el formulario de registro */
 .register-box {
@@ -309,51 +598,48 @@ footer img:hover{
     margin: 5px 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif; /* Fuente Roboto */
-    background-color: transparent; /* Botón transparente */
-    border: 1px solid #ccc; /* Borde */
-    color: #faf5f5; /* Color del texto del botón */
+    background-color: #007bff; /* Botón azul */
+    border: none; /* Sin borde */
+    color: #fff; /* Color del texto del botón */
     cursor: pointer;
+    border-radius: 5px; /* Bordes redondeados */
 }
 
 .register-box input[type="submit"]:hover {
     background-color: #036382; /* Color de fondo del botón al pasar el mouse */
 }
 
-
-
-/*lista de los cursos en la PP */
-
+/* Lista de los cursos en la PP */
 .listaPagCursos {
     display: flex;
     justify-content: space-between; /* Para alinear los divs horizontalmente y agregar espacio entre ellos */
-  }
-  
-  .sidebar {
+}
+
+.sidebar {
     color: #fff;
     padding: 20px;
     width: 300px; /* Ancho del sidebar */
     position: fixed; /* Fija el sidebar */
     height: 100%; /* Tamaño completo */
     overflow-y: auto; /* Permite desplazamiento vertical si el contenido es largo */
-  }
+}
 
-  h1, h2, h3 {
+h1, h2, h3 {
     margin-top: 0;
-  }
-  
-  .course {
+}
+
+.course {
     margin-bottom: 20px;
     margin-left: 520px; /* Espacio para el sidebar más un margen */
     padding: 20px;
-  }
+}
 
-  .course2 {
+.course2 {
     margin-bottom: 20px;
     margin-left: 0px; /* Espacio para el sidebar más un margen */
     padding: 20px;
-  }
+}
 
-  .listaPagCursos {
+.listaPagCursos {
     min-height: 100vh; /* Tamaño mínimo de la ventana gráfica */
-  }
-
+}
