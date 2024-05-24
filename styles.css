@@ -19,8 +19,8 @@ body.iniciar_sesion {
     background-size: cover;
 }
 
-body.iniciar_sesion a {
-    color: #a8d8ff; /* Color de los enlaces */
+body.iniciar_sesion #enl-registrate {
+    color: #a8d8ff; /* Color del enlace "regístrate" */
 }
 
 body.iniciar_sesion input[type="email"],
@@ -54,7 +54,7 @@ body.cursos {
 }
 
 body.registro {
-    background: url('assets/img/back5.jpg') no-repeat center center fixed;
+    background: url('assets/img/back8.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -354,6 +354,7 @@ nav ul li a:hover {
     border: 5px solid black;
     border-radius: 20px;
     margin: 10px 5px;
+    padding: 7px;
     width: 30%;
 }
 
@@ -364,6 +365,7 @@ nav ul li a:hover {
 .todos-cursos img {
     width: 60px;
     height: 60px;
+    margin: 0 7px;
 }
 
 /* Para lista desplegable de cursos */
@@ -415,7 +417,7 @@ nav ul li a:hover {
 }
 
 .boton h2 {
-    margin: 5px 0 0; /* Espacio entre la imagen y el texto */
+    margin: 5px 0 0;  /*Espacio entre la imagen y el texto */
     font-size: 16px; /* Tamaño del texto */
 }
 
@@ -431,7 +433,7 @@ footer {
     overflow: hidden;
     list-style-type: none;
     margin: 0;
-    padding: 1rem 0; /* Ajuste de espacio vertical */
+    padding: 1rem 0 4rem 0; /* Ajuste de espacio vertical */
     text-align: center; /* Centrar contenido del footer */
     font-family: 'Roboto', sans-serif; /* Fuente Roboto */
     font-size: 14px; /* Tamaño de fuente 14px */
@@ -501,7 +503,7 @@ footer img:hover {
 
 .content ul {
     display: flex; /* Establece los elementos internos como flexibles */
-    align-items: center; /* Centra verticalmente los elementos */
+    align-items: center; /*Centra verticalmente los elementos */
 }
 
 .content ul li {
@@ -584,7 +586,8 @@ footer img:hover {
 /* Estilo para los elementos del formulario de registro dentro de la caja */
 .register-box input[type="text"],
 .register-box input[type="email"],
-.register-box input[type="password"] {
+.register-box input[type="password"],
+.register-box select {
     width: calc(100% - 20px);
     padding: 10px;
     margin: 5px 0;
@@ -642,4 +645,61 @@ h1, h2, h3 {
 
 .listaPagCursos {
     min-height: 100vh; /* Tamaño mínimo de la ventana gráfica */
+}
+
+/* Diseño responsive para un ancho de 885-1239px */
+@media only screen and (max-width: 1239px){
+    footer{
+        padding: 1rem 0 5rem 0;
+    }
+
+    #politica{
+        margin-bottom: 35px;
+    }
+
+    .todos-cursos div {
+        width: 45%;
+    }
+
+    #condiciones{
+        margin: 0 20px 70px 20px;
+    }
+}
+
+/* Diseño responsive para un ancho de 749-884px */
+@media only screen and (max-width: 884px){
+    footer, footer div ul li a{
+        font-size: 12px;
+    }
+
+    .todos-cursos div {
+        width: 45%;
+    }
+
+    #condiciones{
+        margin: 0 20px 70px 20px;
+    }
+}
+
+/* Diseño responsive para un ancho de 625-748px */
+@media only screen and (max-width: 748px){
+    #condiciones{
+        margin: 0 20px 70px 20px;
+    }
+    
+}
+
+/* Diseño responsive hasta un ancho de 624px */
+@media only screen and (max-width: 624px){
+    #condiciones{
+        margin: 0 20px 70px 20px;
+    }
+}
+
+/* Diseño responsive hasta un alto de +400px */
+@media only screen and (max-height: 400px){
+    footer{
+        /* height: 20px; */
+    }
+    
 }
