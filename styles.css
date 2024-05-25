@@ -686,6 +686,10 @@ h1, h2, h3 {
     #condiciones{
         margin: 0 20px 70px 20px;
     }
+
+    footer{
+        height: 120px;
+    }
     
 }
 
