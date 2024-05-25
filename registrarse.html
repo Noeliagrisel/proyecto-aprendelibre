@@ -29,11 +29,11 @@
     <h1>Regístrate y comienza a aprender</h1>
     <!-- Caja que contiene el formulario -->
     <div class="register-box">
-        <form action="procesar_registro.php" method="post">
+        <form action="registrarse.html" method="dialog">
             <label for="name">Nombre:</label><br>
-            <input type="text" id="name" name="name" required><br>
+            <input type="text" id="name" name="name"><br>
             <label for="lastname">Apellido:</label><br>
-            <input type="text" id="lastname" name="lastname" required><br>
+            <input type="text" id="lastname" name="lastname"><br>
             <label for="sex">Sexo:</label><br>
             <select name="sex" id="sex">
                 <option value="male">Hombre</option>
@@ -41,12 +41,13 @@
                 <option value="no-say">Prefiero no decirlo</option>
             </select><br>
             <label for="email">Correo electrónico:</label><br>
-            <input type="email" id="email" name="email" required><br>
+            <input type="email" id="email" name="email"><br>
             <label for="password">Contraseña:</label><br>
-            <input type="password" id="password" name="password" required><br>
+            <input type="password" id="password" name="password"><br>
             <label for="confirm_password">Repetir Contraseña:</label><br>
-            <input type="password" id="confirm_password" name="confirm_password" required><br><br>
-            <input type="submit" value="Registrarse">
+            <input type="password" id="confirm_password" name="confirm_password"><br><br>
+            <p class="valid"></p>
+            <input onclick="validar()" type="submit" value="Registrarse">
         </form>
         <!-- Frase debajo del formulario -->
         <p style="text-align: center; margin-top: 10px;">
@@ -74,17 +75,18 @@
         <div class="redes-sociales">
             <p>Nuestras redes</p>
             <a href="https://www.facebook.com/" target="_blank"><img src="assets/img/fb.png" alt="Instagram"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="assets\img\ig.png" alt="Facebook"></a>
-            <a href="https://www.twitter.com/" target="_blank"><img src="assets\img\x_tw.png" alt="TikTok"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="assets/img/ig.png" alt="Facebook"></a>
+            <a href="https://www.twitter.com/" target="_blank"><img src="assets/img/x_tw.png" alt="TikTok"></a>
         </div>
         <div class="copyright">
-            <!--<div class="logo"><img src="assets\img\aprendeLibre.png" alt="AprendeLibre"></div>-->
+            <!--<div class="logo"><img src="assets/img/aprendeLibre.png" alt="AprendeLibre"></div>-->
             <p>&copy; 2024 AprendeLibre.com - Todos los derechos reservados. </p>
         </div>
     </div>
 </footer>
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src="/js/lista.js"></script>
+<!-- <script src="/js/lista.js"></script> -->
+<script src="/js/validacion.js"></script>
 </body>
 </html>
